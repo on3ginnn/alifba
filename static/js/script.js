@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let voiceData = event.target.closest('.content__voice');
             
             if (voiceData.hasAttribute('data-id')){
-                const audio = new Audio(`/static/voice/${voiceData.dataset.id}.mp3`);
+                const audio = new Audio(`./static/voice/${voiceData.dataset.id}.mp3`);
 
                 audio.play();
             }
